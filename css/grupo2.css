@@ -25,7 +25,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    background-color: var(--#1B6DA8) ;
+    background-color: var(--redDark) ;
     width: 100%;
     height: 100%;
     
@@ -61,6 +61,7 @@ main {
 h1 {
     text-align: center;
     font-size: 48px;
+    font-family: Poppins ;
     padding-top: 16px;
     padding-bottom: 4px;
     margin: 0;
@@ -74,6 +75,12 @@ h2 {
     padding-bottom: 4px;
     margin: 0;
     color: var(--black);
+}
+
+#quiz{
+    margin: center;
+    text-align: center;
+    justify-content: center;
 }
 
 footer{
