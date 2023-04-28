@@ -178,3 +178,7 @@ footer {
     display: flex !important;
     justify-content: center !important;
 }
+
+#mapas {
+    margin-left: 7%;
+}
