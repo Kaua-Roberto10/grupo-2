@@ -6,10 +6,21 @@
     --gray: #878787;
     --redMedium: #9a1915;
     --redDark: #681413;
+<<<<<<< HEAD
     
+=======
+    --laranjaForte: #ffae00;
+    --laranjaMedio: #ffae36;
+    --laranjaFraco: #ffba26;
+    --roxoFraco: #a368b1;
+    --roxoForte: #754082;
+    --amarelo: #ffce3b;
+
+>>>>>>> 6405c55edbbfd8658901a17d95646e56c09555c7
 }
+
 /* AQUI ESTÃO SOMENTE AS TAGS COM SUAS PROPRIEDADES */
-*{
+* {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth !important;
@@ -26,10 +37,14 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
+<<<<<<< HEAD
     background-color: var(--redMedium) ;
+=======
+    background-color: var(--laranjaMedio);
+>>>>>>> 6405c55edbbfd8658901a17d95646e56c09555c7
     width: 100%;
     height: 100%;
-    
+
 }
 
 header {
@@ -62,6 +77,8 @@ main {
 h1 {
     text-align: center;
     font-size: 48px;
+    font-family: Poppins;
+    font-weight: 700;
     padding-top: 16px;
     padding-bottom: 4px;
     margin: 0;
@@ -78,13 +95,51 @@ h2 {
     color: var(--black);
 }
 
-footer{
+@media (max-width: 768px) {
+    /* Colocar as class aqui!! */     
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        padding: 10px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      }
+   
+    #mapas {
+        width: 1020px;
+        height: 600px;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+}
+
+/* estilos aplicados a dispositivos com tela menor ou igual a 768px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+   /* Colocar as class aqui!! */
+   
+}
+#quiz {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+footer {
     background-color: var(--red);
     width: 100%;
     height: 25%;
     bottom: 0;
     z-index: 999;
 }
+
 /* AQUI COMEÇA OS STYLES DAS CLASSES E IDS */
 .container {
     max-width: 1140px;
@@ -104,6 +159,7 @@ footer{
 
 .navbar-logo {
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .navbar-items {
@@ -132,6 +188,7 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index:999 ;
 }
 
 .items-social-media {
@@ -147,4 +204,153 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.LogoMultipleLearnin {
+
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column-reverse; */
+}
+
+#imagem1 {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+#mapas {
+    margin-left: 7%;
+
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
+
+#main-menu {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: #000000;
+  margin: 0px;  
+  z-index: 9;
+}
+
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+
+#main-menu li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+#main-menu a {
+  color: #B9FAF8;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#main-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(
+      to bottom, 
+      #000000, #000000 20%, 
+      white 20%, white 40%, 
+      #000000 40%, #000000 60%, 
+      white 60%, white 80%, 
+      #000000 80%, #000000 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #000000;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+  color: #ffffff;
+  font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu a {
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
+
+
+@media screen and (max-width: 750px) {
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
 }
